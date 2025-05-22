@@ -1,0 +1,48 @@
+<div class="container">
+<div class="blur-background"[ngStyle]="{'background-image': 'url(/assets/Login-bg.jpg)'}"></div>
+<div class="form">
+    <h3>Login Here</h3>
+    <form #login="ngForm" (ngSubmit)="onSubmit()">
+        
+        <ng-container *ngIf="!showForgotPassword">
+            <label class="username">Username:</label><br/>
+            <input name="userName" [(ngModel)]="loginForm.userName" required><br/>
+            
+            <label>Password:</label><br/>
+            <input type="password" name="password" [(ngModel)]="loginForm.password" required><br/>
+
+            <label class="forgot-link" (click)="forgotPassword()">Forgot Password?</label><br/>
+
+            <button type="submit" [disabled]="login.invalid && !showForgotPassword">Log In</button><br/>
+            <p class="message">{{ message }}</p>
+            <div class="social">
+                <div class="go">Google</div>
+                <div class="fb">Facebook</div>
+            </div>
+            <p class="register-statement">Don't have an account?
+                <a [routerLink]="['/register']" routerLinkActive="router-link-active">Register</a>
+            </p>
+        </ng-container>
+
+        <ng-container *ngIf="showForgotPassword">
+            <label class="username">Username:</label><br/>
+            <input name="userName" [(ngModel)]="loginForm.userName" required><br/>
+            
+            <label>Enter New Password:</label><br/>
+            <input type="password" name="newPassword" [(ngModel)]="loginForm.newPassword" required><br/>
+            
+            <label>Confirm Password:</label><br/>
+            <input type="password" name="confirmPassword" [(ngModel)]="loginForm.confirmNewPassword" required><br/>
+
+            <button type="button" (click)="resetPassword()">Update Password</button><br/>
+            <div class="social">
+                <div class="go">Google</div>
+                <div class="fb">Facebook</div>
+            </div>
+            <p class="register-statement">Click Here to
+                <a [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a>
+            </p>
+    </ng-container>
+    </form>
+</div>
+</div>

@@ -1,0 +1,219 @@
+/* Global Page Title */
+.page-title {
+    color: #fff;  /* Text color */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Background overlay effect */
+.page-title::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Title container */
+.page-title .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Page title text */
+.page-title h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Page description */
+.page-title p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+/* Breadcrumbs */
+.breadcrumbs ol {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Breadcrumb items */
+.breadcrumbs ol li {
+    display: inline-block;
+    font-weight: 500;
+}
+
+/* Breadcrumb separator */
+.breadcrumbs ol li + li::before {
+    content: "/";
+    margin: 0 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Breadcrumb links */
+.breadcrumbs ol li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: color 0.3s;
+}
+
+.breadcrumbs ol li a:hover {
+    color: #ffcc00;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-title {
+        padding: 50px 20px;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+
+    .page-title p {
+        font-size: 16px;
+    }
+
+    .breadcrumbs ol {
+        font-size: 14px;
+    }
+}
+
+/* Feedback Section */
+.feedback-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+/* Title */
+.feedback-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Wrapper to arrange form and reviews side by side */
+.feedback-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Feedback Form - Left */
+.feedback-form {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.feedback-form h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.feedback-form label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    display: block;
+}
+
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.feedback-form textarea {
+    height: 80px;
+    resize: none;
+}
+
+.feedback-form button {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.feedback-form button:hover {
+    background: #218838;
+}
+
+/* Feedback List - Right */
+.feedback-list {
+    flex: 1;
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.feedback-list h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Individual Feedback Item */
+.feedback-item {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rating {
+    color: #f39c12;
+    font-size: 18px;
+}
+
+.comment {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Responsive for Smaller Screens */
+@media (max-width: 768px) {
+    .feedback-wrapper {
+        flex-direction: column;
+    }
+
+    .feedback-form, .feedback-list {
+        width: 100%;
+    }
+}

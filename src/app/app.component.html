@@ -1,0 +1,26 @@
+<body>
+  <header class="header">
+    <a [routerLink]="['/home']">
+      <img src="./assets/logo.png" alt="">
+    </a>
+    <nav class="navmenu">
+      <ul>
+        <li><a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a></li>
+        <li><a [routerLink]="['/about-us']" routerLinkActive="router-link-active">About Us</a></li>
+        <li class="dropdown">
+          <a [routerLink]="['/products']" routerLinkActive="router-link-active">Products</a>
+          <ul>
+            <li><a [routerLink]="['/products/saplings']" routerLinkActive="router-link-active">Saplings</a></li>
+            <li><a [routerLink]="['/products/seeds']" routerLinkActive="router-link-active">Seeds</a></li>
+            <li><a [routerLink]="['/products/tools']" routerLinkActive="router-link-active">Tools</a></li>
+            <li><a [routerLink]="['/products/manure']" routerLinkActive="router-link-active">Manure</a></li>
+          </ul>
+        </li>
+        <li><a [routerLink]="['/feedback']" routerLinkActive="router-link-active">Feedback</a></li>
+        <li><a [routerLink]="['/login']" routerLinkActive="router-link-active" (click)="handleAuthAction()">{{ authService.isLoggedIn() ? 'Logout' : 'Login' }}</a></li>
+      </ul>      
+    </nav>
+  </header>
+</body>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,42 @@
+<!-- Page Title -->
+<div class="page-title">
+  <div class="container">
+      <h1>Saplings</h1>
+      <p>
+          Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.
+      </p>
+      <nav class="breadcrumbs">
+          <ol>
+              <li><a href="/home" [ngStyle]="{'color':'green'}">Home</a></li>
+              <li><a href="/products" [ngStyle]="{'color':'green'}">Products</a></li>
+              <li class="current">Manure</li>
+          </ol>
+      </nav>
+  </div>
+</div>
+<div class="sapling-container">
+  <!-- Sorting Section -->
+  <div class="sort-options">
+    <h3>Sort By</h3>
+    <button (click)="sortManures('price')">Price</button>
+    <button (click)="sortManures('rating')">Rating</button>
+    <button (click)="sortManures('name')">Name</button>
+  </div>
+
+  <!-- Sapling Cards Grid -->
+  <div class="sapling-grid">
+    <div class="sapling-card" *ngFor="let sapling of manures.slice(0, 12)">
+      <img [src]="sapling.image" alt="{{ sapling.name }}">
+      <div class="sapling-info">
+        <h3>{{ sapling.name }}</h3>
+        <p class="description">{{ sapling.productDetails }}</p>
+        <div class="price-rating">
+          <p class="price">₹{{ sapling.price }}</p>
+          <p class="rating">⭐ {{ sapling.rating }}</p>
+        </div>
+        <button class="enquire-btn">Enquire Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer/>

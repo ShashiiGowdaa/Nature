@@ -1,0 +1,54 @@
+<!-- Page Title -->
+<div class="page-title">
+  <div class="container">
+      <h1>Feedback</h1>
+      <p>
+          Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.
+      </p>
+      <nav class="breadcrumbs">
+          <ol>
+              <li><a href="/home" routerLinkActive="router-link-active" [ngStyle]="{'color':'green'}">Home</a></li>
+              <li class="current">Feedback</li>
+          </ol>
+      </nav>
+  </div>
+</div>
+<div class="feedback-container">
+  <h2>Customer Feedback</h2>
+
+  <div class="feedback-wrapper">
+      <!-- Feedback Form on the Left -->
+      <div class="feedback-form">
+          <h3>Submit Your Feedback</h3>
+
+          <label for="rating">Rating:</label>
+          <select id="rating" [(ngModel)]="newFeedback.rating">
+              <option value="1">1 Star</option>
+              <option value="2">2 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="5">5 Stars</option>
+          </select>
+
+          <label for="comment">Comment:</label>
+          <textarea id="comment" [(ngModel)]="newFeedback.comment" placeholder="Write your feedback here"></textarea>
+
+          <button (click)="submitFeedback()">Submit Feedback</button>
+      </div>
+
+      <!-- Feedback List on the Right -->
+      <div class="feedback-list">
+          <h3>What Customers Say</h3>
+          <div *ngFor="let feedback of feedbacks" class="feedback-item">
+              <div class="rating">
+                  <span *ngFor="let star of [].constructor(5); let i = index">
+                      <span *ngIf="i < feedback.rating">★</span>
+                      <span *ngIf="i >= feedback.rating">☆</span>
+                  </span>
+              </div>
+              <p class="comment">{{ feedback.comment }}</p>
+          </div>
+      </div>
+  </div>
+</div>
+<app-footer/>

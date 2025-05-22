@@ -1,0 +1,108 @@
+<!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+    <div id="hero-carousel" class="carousel">
+      <div *ngFor="let slide of slides; let i = index" 
+           [class.active]="i === currentSlide" 
+           class="carousel-item">
+        <img [src]="slide.image" [alt]="slide.alt">
+        <div class="carousel-container">
+          <h2>{{ slide.title }}</h2>
+          <p>{{ slide.description }}</p>
+        </div>
+      </div>
+  
+      <button class="carousel-control-prev" (click)="prevSlide()">&#10094;</button>
+      <button class="carousel-control-next" (click)="nextSlide()">&#10095;</button>
+  
+      <div class="carousel-indicators">
+        <div *ngFor="let slide of slides; let i = index" 
+             [class.active]="i === currentSlide"
+             (click)="goToSlide(i)">
+        </div>
+      </div>
+    </div>
+  </section>
+  <h1>Category</h1>
+  <div class="category-carousel-container">
+    <div class="swiper category-carousel">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide category-item">
+                <img src="assets/category-1.jpg" alt="Category Thumbnail">
+                <h4 class="category-title">Saplings</h4>
+            </div>
+            <div class="swiper-slide category-item">
+                <img src="assets/category-2.jpg" alt="Category Thumbnail">
+                <h4 class="category-title">Seeds</h4>
+            </div>
+            <div class="swiper-slide category-item">
+                <img src="assets/category-3.jpg" alt="Category Thumbnail">
+                <h4 class="category-title">Tools</h4>
+            </div>
+            <div class="swiper-slide category-item">
+                <img src="assets/category-4.jpg" alt="Category Thumbnail">
+                <h4 class="category-title">Manure</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<h1>Most Popular Items</h1>
+<div class="most-popular-container">
+    <button class="product-carousel-btn left" (click)="scrollLeft()">&#10094;</button>
+    <div id="carousel" class="product-carousel">
+
+    <div class="main-card" *ngIf="bestSellingItems.saplings?.length">
+        <div class="card" *ngFor="let item of bestSellingItems.saplings">
+            <img [src]="item.image" alt="">
+            <h3>{{item.name}}</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>₹{{ item.price }}</p>
+            <button class="add-to-cart">Enquire Now</button>
+        </div>
+    </div>
+  
+    <!-- Seeds -->
+    <div class="main-card" *ngIf="bestSellingItems.seeds?.length">
+        <div class="card" *ngFor="let item of bestSellingItems.seeds">
+            <img [src]="item.image" alt="">
+            <h3>{{item.name}}</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>₹{{ item.price }}</p>
+            <button class="add-to-cart">Enquire Now</button>
+        </div>
+    </div>
+  
+    <!-- Tools -->
+    <div class="main-card" *ngIf="bestSellingItems.tools?.length">
+        <div class="card" *ngFor="let item of bestSellingItems.tools">
+            <img [src]="item.image" alt="">
+            <h3>{{item.name}}</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>₹{{ item.price }}</p>
+            <button class="add-to-cart">Enquire Now</button>
+        </div>
+    </div>
+  
+    <!-- Manure -->
+    <div class="main-card"  *ngIf="bestSellingItems.manure?.length">
+        <div class="card" *ngFor="let item of bestSellingItems.manure">
+            <img [src]="item.image" alt="">
+            <h3>{{item.name}}</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>₹{{ item.price }}</p>
+            <button class="add-to-cart">Enquire Now</button>
+          </div>
+    </div>
+  
+    <!-- Show message if no best-selling items found -->
+    <div *ngIf="!bestSellingItems.saplings?.length && 
+                !bestSellingItems.seeds?.length && 
+                !bestSellingItems.tools?.length && 
+                !bestSellingItems.manure?.length">
+      <p>No best-selling items available.</p>
+    </div>
+    </div>
+    <button class="product-carousel-btn right" (click)="scrollRight()">&#10095;</button>
+  </div>
+  <app-footer/>
+  
+  

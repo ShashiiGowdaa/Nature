@@ -1,0 +1,131 @@
+/* Footer Container */
+.footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    padding: 50px 0;
+  }
+  
+  /* Footer Top */
+  .footer-top {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Centering Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Footer Grid */
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+  
+  /* Logo and Contact */
+  .footer-about .logo {
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+  }
+  
+  /* Footer Links */
+  .footer-links h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .footer-links h4::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #f39c12;
+    margin-top: 5px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    padding: 5px 0;
+  }
+  
+  .footer-links ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #f39c12;
+  }
+  
+  /* Social Links */
+  .social-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #f39c12;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  
+  .social-links a:hover {
+    background: #f39c12;
+    color: #222;
+  }
+  
+  /* Copyright Section */
+  .copyright {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+  }
+  
+  .copyright a {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .copyright a:hover {
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  

@@ -1,0 +1,117 @@
+<router-outlet></router-outlet>
+
+<!-- Page Title -->
+<div class="page-title text-center py-4">
+    <div class="container">
+        <h1 class="fw-bold">Products</h1>
+        <p class="text-muted">
+            Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.
+        </p>
+        <nav class="breadcrumbs">
+            <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="/home" class="text-success">Home</a></li>
+                <li class="breadcrumb-item active text-dark" aria-current="page">Products</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<!-- Banner Section -->
+<section class="container py-4">
+    <div class="row g-3">
+
+        <!-- Large Banner -->
+        <div class="col-md-8">
+            <div class="banner-ad position-relative overflow-hidden rounded-3"
+                 style="background: url('assets/banner-ad-1.jpg') no-repeat center center / cover; height: 300px;">
+                <div class="banner-content text-white p-4 position-absolute top-50 start-50 translate-middle w-100 text-center">
+                    <h2 class="fw-bold">Items on SALE</h2>
+                    <p>Discounts up to 30%</p>
+                    <a href="#" class="btn btn-outline-light fw-bold">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Small Banners -->
+        <div class="col-md-4 d-flex flex-column gap-3">
+            <div class="banner-ad position-relative overflow-hidden rounded-3"
+                 style="background: url('assets/banner-ad-2.jpg') no-repeat center center / cover; height: 140px;">
+                <div class="banner-content text-white p-3 position-absolute top-50 start-50 translate-middle w-100 text-center">
+                    <h3 class="fw-bold">Combo Offers</h3>
+                    <p>Discounts up to 50%</p>
+                    <a href="#" class="btn btn-outline-light fw-bold btn-sm">SHOP NOW</a>
+                </div>
+            </div>
+
+            <div class="banner-ad position-relative overflow-hidden rounded-3"
+                 style="background: url('assets/banner-ad-3.jpg') no-repeat center center / cover; height: 140px;">
+                <div class="banner-content text-white p-3 position-absolute top-50 start-50 translate-middle w-100 text-center">
+                    <h3 class="fw-bold">Discount Coupons</h3>
+                    <p>Discounts up to 40%</p>
+                    <a href="#" class="btn btn-outline-light fw-bold btn-sm">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<h1>Featured Items</h1>
+<div class="most-popular-container">
+    <button class="product-carousel-btn left" (click)="scrollLeft()">&#10094;</button>
+    <div id="carousel" class="product-carousel">
+
+    <div class="main-card" *ngIf="bestSellingItems.saplings?.length">
+        <div class="card" *ngFor="let item of bestSellingItems.saplings">
+            <img [src]="item.image" alt="">
+            <h3>{{item.name}}</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>₹{{ item.price }}</p>
+            <button class="add-to-cart">Enquire Now</button>
+        </div>
+    </div>
+  
+    <!-- Seeds -->
+    <div class="main-card" *ngIf="bestSellingItems.seeds?.length">
+        <div class="card" *ngFor="let item of bestSellingItems.seeds">
+            <img [src]="item.image" alt="">
+            <h3>{{item.name}}</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>₹{{ item.price }}</p>
+            <button class="add-to-cart">Enquire Now</button>
+        </div>
+    </div>
+  
+    <!-- Tools -->
+    <div class="main-card" *ngIf="bestSellingItems.tools?.length">
+        <div class="card" *ngFor="let item of bestSellingItems.tools">
+            <img [src]="item.image" alt="">
+            <h3>{{item.name}}</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>₹{{ item.price }}</p>
+            <button class="add-to-cart">Enquire Now</button>
+        </div>
+    </div>
+  
+    <!-- Manure -->
+    <div class="main-card"  *ngIf="bestSellingItems.manure?.length">
+        <div class="card" *ngFor="let item of bestSellingItems.manure">
+            <img [src]="item.image" alt="">
+            <h3>{{item.name}}</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>₹{{ item.price }}</p>
+            <button class="add-to-cart">Enquire Now</button>
+          </div>
+    </div>
+  
+    <!-- Show message if no best-selling items found -->
+    <div *ngIf="!bestSellingItems.saplings?.length && 
+                !bestSellingItems.seeds?.length && 
+                !bestSellingItems.tools?.length && 
+                !bestSellingItems.manure?.length">
+      <p>No best-selling items available.</p>
+    </div>
+    </div>
+    <button class="product-carousel-btn right" (click)="scrollRight()">&#10095;</button>
+  </div>
+<!-- Footer -->
+<app-footer></app-footer>

@@ -1,0 +1,123 @@
+.about-3 .content-title {
+    color: var(--accent-color);
+    margin-bottom: 30px;
+  }
+  
+  .about-3 .btn-cta {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    border-radius: 6px;
+  }
+  
+  .about-3 .list-check {
+    margin-bottom: 50px;
+  }
+  
+  .about-3 .list-check li {
+    display: block;
+    padding-left: 30px;
+    position: relative;
+  }
+  
+  .about-3 .list-check li:before {
+    content: "\f26e";
+    display: inline-block;
+    font-family: "bootstrap-icons" !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -0.125em;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 0.1rem;
+    font-size: 20px;
+    left: 0;
+    color: var(--accent-color);
+  }
+  
+  .about-3 .pulsating-play-btn {
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+  }
+  
+  .team-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .person {
+    text-align: center;
+  }
+  
+  .person img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .social a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+  }
+.team {
+    text-align: center;
+    padding: 60px 0;
+  }
+  
+  .team .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team .team-member {
+    width: 250px;
+    text-align: center;
+  }
+  
+  .team .team-member img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .team .team-member:hover img {
+    transform: scale(1.05);
+  }
+  
+  .team .team-info h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .team .team-info .position {
+    color: #666;
+  }
+  
+  .team .social {
+    margin-top: 10px;
+  }
+  
+  .team .social a {
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .team .social a:hover {
+    color: #007bff;
+  }
+  

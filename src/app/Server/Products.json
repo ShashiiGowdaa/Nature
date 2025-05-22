@@ -1,0 +1,478 @@
+{
+  "saplings": [
+    {
+      "id": "1",
+      "name": "Mango Sapling",
+      "scientificName": "Mangifera indica",
+      "price": 150,
+      "growthTime": "3-5 years",
+      "climate": "Tropical",
+      "soilType": "Loamy",
+      "rating": 4.5,
+      "image":"./assets/mango-saplings.jpg",
+      "productDetails": "Sweet mango-producing sapling.",
+      "reviews": [
+        {
+          "user": "Amit Sharma",
+          "rating": 5,
+          "comment": "Healthy sapling!"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Guava Sapling",
+      "scientificName": "Psidium guajava",
+      "price": 100,
+      "growthTime": "2-4 years",
+      "climate": "Subtropical",
+      "soilType": "Sandy loam",
+      "rating": 4.5,
+      "image":"./assets/guava-saplings.jpg",
+      "productDetails": "Fast-growing guava sapling.",
+      "reviews": [
+        {
+          "user": "Neha Singh",
+          "rating": 4.5,
+          "comment": "Growing quickly!"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Coconut Sapling",
+      "scientificName": "Cocos nucifera",
+      "price": 180,
+      "growthTime": "5-7 years",
+      "climate": "Coastal",
+      "soilType": "Sandy",
+      "rating": 4.9,
+      "image":"./assets/coconut-saplings.jpg",
+      "productDetails": "Strong coconut-bearing tree.",
+      "reviews": [
+        {
+          "user": "Vinod Rao",
+          "rating": 4.9,
+          "comment": "Good quality plant."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Banana Sapling",
+      "scientificName": "Musa spp.",
+      "price": 90,
+      "growthTime": "1-2 years",
+      "climate": "Tropical",
+      "soilType": "Rich loam",
+      "rating": 4.8,
+      "image":"./assets/banana-saplings.jpg",
+      "productDetails": "Quick-growing banana plant.",
+      "reviews": [
+        {
+          "user": "Ramesh Patel",
+          "rating": 4.8,
+          "comment": "Very productive."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Lemon Sapling",
+      "scientificName": "Citrus limon",
+      "price": 80,
+      "growthTime": "2-3 years",
+      "climate": "Tropical",
+      "soilType": "Well-drained",
+      "rating": 4.7,
+      "image":"./assets/lemon-saplings.webp",
+      "productDetails": "Aromatic lemon plant.",
+      "reviews": [
+        {
+          "user": "Suresh Reddy",
+          "rating": 4.7,
+          "comment": "Healthy leaves and flowers."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Apple Sapling",
+      "scientificName": "Malus domestica",
+      "price": 200,
+      "growthTime": "4-6 years",
+      "climate": "Temperate",
+      "soilType": "Well-drained",
+      "rating": 4.6,
+      "image":"./assets/apple-saplings.webp",
+      "productDetails": "Produces delicious apples.",
+      "reviews": [
+        {
+          "user": "Rahul Kapoor",
+          "rating": 4.6,
+          "comment": "Growing steadily."
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Papaya Sapling",
+      "scientificName": "Carica papaya",
+      "price": 110,
+      "growthTime": "1-2 years",
+      "climate": "Warm",
+      "soilType": "Sandy loam",
+      "rating": 4.9,
+      "image":"./assets/papaya-saplings.jpg",
+      "productDetails": "Rich in vitamins and minerals.",
+      "reviews": [
+        {
+          "user": "Meera Das",
+          "rating": 4.9,
+          "comment": "Strong and disease-free."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Jackfruit Sapling",
+      "scientificName": "Artocarpus heterophyllus",
+      "price": 160,
+      "growthTime": "3-5 years",
+      "climate": "Tropical",
+      "soilType": "Deep loam",
+      "rating": 4.7,"image":"./assets/jackfruit-saplings.jpg",
+      "productDetails": "Heavy fruiting jackfruit tree.",
+      "reviews": [
+        {
+          "user": "Anil Joshi",
+          "rating": 4.7,
+          "comment": "Fast growth!"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Cherry Sapling",
+      "scientificName": "Prunus avium",
+      "price": 220,
+      "growthTime": "5-7 years",
+      "climate": "Cold",
+      "soilType": "Well-drained loamy",
+      "rating": 4.8,
+      "image":"./assets/cherry-saplings.jpg",
+      "productDetails": "Produces sweet cherries.",
+      "reviews": [
+        {
+          "user": "Priya Verma",
+          "rating": 4.8,
+          "comment": "Healthy branches."
+        }
+      ]
+    }
+  ],
+    "seeds": [
+      {
+        "id": "1",
+        "name": "Tomato Seeds",
+        "price": 50,
+        "germinationTime": "5-10 days",
+        "rating": 4.8,
+        "image":"./assets/tomato-seeds.jpg",
+        "description": "Produces bright red, juicy tomatoes rich in vitamins and antioxidants. Ideal for salads, sauces, and fresh consumption."
+      },
+      {
+        "id": "2",
+        "name": "Carrot Seeds",
+        "price": 40,
+        "germinationTime": "10-15 days",
+        "rating": 4.7,
+        "image":"./assets/carrot-seeds.jpg",
+        "description": "Grows into vibrant orange carrots packed with beta-carotene and nutrients. Perfect for raw consumption, salads, and cooking."
+      },
+      {
+        "id": "3",
+        "name": "Spinach Seeds",
+        "price": 30,
+        "germinationTime": "7-12 days",
+        "rating": 4.9,
+        "image":"./assets/spinach-seeds.jpg",
+        "description": "Yields dark green, nutrient-dense spinach leaves rich in iron and fiber. Great for salads, smoothies, and cooked dishes."
+      },
+      {
+        "id": "4",
+        "name": "Cucumber Seeds",
+        "price": 45,
+        "germinationTime": "4-8 days",
+        "rating": 4.6,
+        "image":"./assets/cucumber-seeds.jpg",
+        "description": "Produces refreshing, hydrating cucumbers rich in vitamins and antioxidants. Ideal for salads and detox water."
+      },
+      {
+        "id": "5",
+        "name": "Brinjal Seeds",
+        "price": 35,
+        "germinationTime": "8-12 days",
+        "rating": 4.5,
+        "image":"./assets/brinjal-seeds.jpg",
+        "description": "Also known as eggplant, grows into purple, fleshy vegetables used in curries, grills, and stir-fries. High in fiber and antioxidants."
+      },
+      {
+        "id": "6",
+        "name": "Pumpkin Seeds",
+        "price": 60,
+        "germinationTime": "6-10 days",
+        "rating": 4.7,
+        "image":"./assets/pumpkin-seeds.jpg",
+        "description": "Produces large, nutrient-rich pumpkins great for soups, pies, and roasting. Seeds are also edible and packed with protein."
+      },
+      {
+        "id": "7",
+        "name": "Coriander Seeds",
+        "price": 25,
+        "germinationTime": "5-8 days",
+        "rating": 4.6,
+        "image":"./assets/corriander-seeds.jpg",
+        "description": "Grows into fresh coriander leaves widely used in cooking for their aromatic flavor. Seeds can also be used as a spice."
+      },
+      {
+        "id": "8",
+        "name": "Watermelon Seeds",
+        "price": 70,
+        "germinationTime": "4-7 days",
+        "rating": 4.8,
+        "image":"./assets/watermelon-seeds.jpg",
+        "description": "Grows into large, juicy watermelons that are hydrating and rich in vitamins A and C. Perfect for summer refreshment."
+      },
+      {
+        "id": "9",
+        "name": "Okra Seeds",
+        "price": 38,
+        "germinationTime": "6-9 days",
+        "rating": 4.9,
+        "image":"./assets/okra-seeds.jpg",
+        "description": "Yields green, fibrous pods commonly used in stews and stir-fries. Rich in vitamins and dietary fiber."
+      }
+    ],
+"tools": [
+    {
+      "id": "1",
+      "name": "Hand Trowel",
+      "price": 120,
+      "rating": 4.8,
+      "image":"./assets/hand-trowel.jpg",
+      "description": "A small, handheld tool perfect for digging, planting, and moving soil in your garden."
+    },
+    {
+      "id": "2",
+      "name": "Pruning Shears",
+      "price": 250,
+      "rating": 4.7,
+      "image":"./assets/pruning-shears.jpg",
+      "description": "Sharp, durable shears designed for trimming plants, shrubs, and small branches with precision."
+    },
+    {
+      "id": "3",
+      "name": "Garden Fork",
+      "price": 200,
+      "rating": 4.6,
+      "image":"./assets/garden-fork.jpg",
+      "description": "A sturdy tool used for loosening soil, aerating lawns, and turning compost with ease."
+    },
+    {
+      "id": "4",
+      "name": "Watering Can",
+      "price": 300,
+      "rating": 4.9,
+      "image":"./assets/watering-can.jpg",
+      "description": "A convenient container with a spout, ideal for watering plants gently and evenly."
+    },
+    {
+      "id": "5",
+      "name": "Garden Hoe",
+      "price": 180,
+      "rating": 4.5,
+      "image":"./assets/garden-hoe.jpg",
+      "description": "A strong hoe designed for weeding, cultivating, and breaking up tough soil efficiently."
+    },
+    {
+      "id": "6",
+      "name": "Weeder",
+      "price": 150,
+      "rating": 4.7,
+      "image":"./assets/weeder.jpg",
+      "description": "A specialized tool to remove weeds from the root, making garden maintenance easier."
+    },
+    {
+      "id": "7",
+      "name": "Sprayer",
+      "price": 500,
+      "rating": 4.8,
+      "image":"./assets/sprayer.jpg",
+      "description": "A useful tool for applying water, pesticides, or fertilizers evenly across your garden."
+    },
+    {
+      "id": "8",
+      "name": "Rake",
+      "price": 230,
+      "rating": 4.6,
+      "image":"./assets/rake.jpg",
+      "description": "A versatile tool for gathering leaves, leveling soil, and maintaining a tidy garden."
+    },
+    {
+      "id": "9",
+      "name": "Garden Knife",
+      "price": 90,
+      "rating": 4.9,
+      "image":"./assets/graden-knife.jpg",
+      "description": "A sharp, multipurpose knife used for cutting plants, harvesting, and grafting."
+    }
+  ],
+    "manure": [
+      {
+        "id": "1",
+        "name": "Compost Manure",
+        "price": 60,
+        "rating": 4.5,
+        "image":"./assets/compost-manure.jpg",
+        "productDetails": "Organic compost for nutrient-rich soil.",
+        "description": "Compost manure is a natural fertilizer made from decomposed organic matter. It improves soil structure, enhances microbial activity, and provides essential nutrients for plant growth.",
+        "reviews": [
+          {
+            "user": "Ravi Kumar",
+            "rating": 4.5,
+            "comment": "Improved plant growth!"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Vermicompost",
+        "price": 120,
+        "rating": 4.7,
+        "image":"./assets/vermi-compost.webp",
+        "productDetails": "Earthworm-based compost for high fertility.",
+        "description": "Vermicompost is created by earthworms breaking down organic material, resulting in a highly nutritious and easily absorbable fertilizer that enhances plant health and root growth.",
+        "reviews": [
+          {
+            "user": "Sneha Yadav",
+            "rating": 5,
+            "comment": "Best for all plants!"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Cow Dung Manure",
+        "price": 80,
+        "rating": 4.6,
+        "image":"./assets/cow-dung-manurejpeg.jpeg",
+        "productDetails": "Natural manure for a healthy garden.",
+        "description": "Cow dung manure is a traditional organic fertilizer that enriches the soil with essential nutrients, improves moisture retention, and boosts plant productivity naturally.",
+        "reviews": [
+          {
+            "user": "Vikas Sharma",
+            "rating": 4.6,
+            "comment": "Great for soil enrichment."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Chicken Manure",
+        "price": 150,
+        "rating": 4.8,
+        "image":"./assets/chiken-manure.webp",
+        "productDetails": "High-nutrient manure for enhanced plant growth.",
+        "description": "Chicken manure is a powerful organic fertilizer rich in nitrogen, phosphorus, and potassium, promoting rapid plant growth and improving soil fertility.",
+        "reviews": [
+          {
+            "user": "Rita Singh",
+            "rating": 5,
+            "comment": "Excellent fertilizer!"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Neem Cake Manure",
+        "price": 100,
+        "rating": 4.7,
+        "image":"./assets/neem-cake-manure.jpg",
+        "productDetails": "Neem-based organic fertilizer for plant protection.",
+        "description": "Neem cake manure acts as both a fertilizer and a natural pesticide, enhancing soil fertility while protecting plants from harmful pests and diseases.",
+        "reviews": [
+          {
+            "user": "Mohit Kumar",
+            "rating": 4.7,
+            "comment": "Good for pest control."
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "Fish Meal Manure",
+        "price": 180,
+        "rating": 4.9,
+        "image":"./assets/fishmeal_powder.jpg",
+        "productDetails": "Protein-rich fertilizer for strong root growth.",
+        "description": "Fish meal manure is packed with essential nutrients, including nitrogen and phosphorus, promoting strong root development and vigorous plant growth.",
+        "reviews": [
+          {
+            "user": "Sanjay Gupta",
+            "rating": 5,
+            "comment": "Amazing results."
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Bone Meal Manure",
+        "price": 110,
+        "rating": 4.6,
+        "image":"./assets/bone-meal-manure.jpg",
+        "productDetails": "High in phosphorous for root development.",
+        "description": "Bone meal manure is a slow-release organic fertilizer rich in phosphorus, which is essential for strong root growth and healthy flowering plants.",
+        "reviews": [
+          {
+            "user": "Manoj Sinha",
+            "rating": 4.6,
+            "comment": "Helps in flowering plants."
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Guano Manure",
+        "price": 90,
+        "rating": 4.8,
+        "image":"./assets/guano-manure.jpg",
+        "productDetails": "Bat guano for rich, organic fertilizer.",
+        "description": "Guano manure is derived from bat droppings and is an excellent natural fertilizer that enhances soil structure, increases microbial activity, and boosts plant growth.",
+        "reviews": [
+          {
+            "user": "Sunita Verma",
+            "rating": 5,
+            "comment": "Boosted my plant's health."
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Alfalfa Meal Manure",
+        "price": 160,
+        "rating": 4.9,
+        "image":"./assets/alfalfa-powder.jpg",
+        "productDetails": "Legume-based organic fertilizer for sustainable growth.",
+        "description": "Alfalfa meal manure is a plant-based organic fertilizer rich in nitrogen and trace minerals, promoting sustainable plant growth and improving soil health.",
+        "reviews": [
+          {
+            "user": "Gaurav Reddy",
+            "rating": 5,
+            "comment": "Best for green leafy plants."
+          }
+        ]
+      }
+    ]
+  
+}
